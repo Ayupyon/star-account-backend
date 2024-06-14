@@ -1,0 +1,13 @@
+version: "2"
+sql:
+  - engine: "postgresql"
+    schema: "./db/migration"
+    queries: "./db/query"
+    database:
+      uri: "postgresql://root:secret@localhost:15432/star_account?sslmode=disable"
+    gen: 
+      go: 
+        package: "sqlc"
+        out: "./db/sqlc"
+        emit_empty_slices: true # 让:many没有结果时返回空切片
+        emit_json_tags: true # 自动添加json tag
