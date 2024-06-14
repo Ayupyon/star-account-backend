@@ -5,6 +5,7 @@
 2. go v1.21及以上
 3. golang-sqlc v1.26.0及以上
 4. golang-migrate v4.17.1及以上
+5. python3
 
 ## 使用方法
 
